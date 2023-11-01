@@ -5,8 +5,18 @@
     */
 
     //Entrada
+    function calcularFatorial(num) {
+        let fatorial = num;
+        for (let c = 1; c < num; c++) {
+            fatorial *= c;
+            console.log(fatorial);
+        }
+        return {num, fatorial}
+    }
 
+    const numFatorial = calcularFatorial(Number(prompt(`Informe um número`)));
 
+    alert(`O fatorial de ${numFatorial.num} número é: ${numFatorial.fatorial}`);
     //Processamento
 
 

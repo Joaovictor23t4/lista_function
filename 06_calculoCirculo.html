@@ -9,7 +9,7 @@
 
     //Entrada
     function calcularCirculo(raio) {
-        return {area: 3.14 * (raio ** 2), perimetro: 2 * 3.14 * raio}
+        return {area: 3.14 * (raio ** 2), perimetro: (2 * 3.14 * raio).toFixed(1)}
     }
 
     const raio = calcularCirculo(Number(prompt(`Informe o raio do circulo`)));

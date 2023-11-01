@@ -9,10 +9,8 @@
     function calcularArea(base = 0, altura = 0) {
         return base * altura;
     }
-
-    const numBase = Number(prompt(`Informe a base do triângulo`));
-    const numAltura = Number(prompt(`Informe a altura do triângulo`));
-    const resultado = calcularArea(numBase, numAltura);
+    
+    const resultado = calcularArea(Number(prompt(`Informe a base do triângulo`)), Number(prompt(`Informe a altura do triângulo`)));
 
     alert(`A área do triângulo é: ${resultado}m²`);
 

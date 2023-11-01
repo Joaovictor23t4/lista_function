@@ -5,8 +5,26 @@
     */
 
     //Entrada
+    function verificarPrimo(num, ePrimo = true) {
+        if (num === 1 || num === 2) {
+            return alert(`${num} é primo`);
+        }
+
+        for (let c = 2; c < num; c++) {
+            if (num % c === 0) {
+                ePrimo = false;
+            }
 
 
+            if (ePrimo) {
+                return alert(`${num} é primo!`);
+            } else {
+                return alert(`${num} não é primo!`);
+            }
+        }
+    }
+
+    const resultado = verificarPrimo(Number(prompt(`Informe um número`)));
     //Processamento
 
 

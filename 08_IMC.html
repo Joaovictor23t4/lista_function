@@ -6,8 +6,14 @@
     */
 
     //Entrada
+    function calcularIMC(peso, altura) {
+        altura = (altura > 10) ? altura / 100 : altura
+        return peso / altura ** 2;
+    }
 
+    const resultado = calcularIMC(Number(prompt(`Informe seu peso (em KG)`)), Number(prompt(`Informe sua altura (em M)`).replace("," , ".")));
 
+    alert(`Seu IMC é de ${resultado}`);
     //Processamento
 
 

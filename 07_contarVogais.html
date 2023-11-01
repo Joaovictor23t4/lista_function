@@ -7,8 +7,19 @@
     */
 
     //Entrada
+    function contadorVogais(palavra) {
+        let contador = 0;
+        for (const varredor of palavra) {
+            if (varredor == "a" || varredor == "e" || varredor == "i" || varredor == "o" || varredor == "u") {
+                contador++;
+            }
+        }
+        return {palavra, vogais: contador};
+    }
 
+    const escolhaPalavra = contadorVogais(prompt(`Escolha uma palavra`).toLowerCase());
 
+    alert(`A palavra ${escolhaPalavra.palavra} tem ${escolhaPalavra.vogais} vogais`);
     //Processamento
 
 

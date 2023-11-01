@@ -8,8 +8,13 @@
     */
 
     //Entrada
+    function calcularCirculo(raio) {
+        return {area: 3.14 * (raio ** 2), perimetro: 2 * 3.14 * raio}
+    }
 
+    const raio = calcularCirculo(Number(prompt(`Informe o raio do circulo`)));
 
+    alert(`A área do círculo é ${raio.area}m², já o perimetro é ${raio.perimetro}m`);
     //Processamento
 
 
